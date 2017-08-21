@@ -1,0 +1,31 @@
+{
+  "id":"f0d8368d-85e2-54fb-73c4-2d60374295e3",
+  "customerId":"1324466577",
+  "overview":"pending transaction",
+  "inboundOpportunity":"exists",
+  "objective":"aggressive",
+  "accounts":[
+    {
+      "accountNumber":"Y01-0004000",
+      "registeredAs":"individual",
+      "type":"retail",
+      "accountType":"brokerage",
+      "address":{
+        "city":"phoenix",
+        "state":"AZ"
+      },
+      "netWorth":"76452.56"
+    },
+    {
+      "accountNumber":"Y01-0005000",
+      "registeredAs":"individual",
+      "type":"retail",
+      "accountType":"brokerage",
+      "address":{
+        "city":"phoenix",
+        "state":"AZ"
+      },
+      "netWorth":76452.56
+    }
+  ]
+}

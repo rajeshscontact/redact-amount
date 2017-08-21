@@ -1,0 +1,4 @@
+---
+applications:
+- name: accountSummaryInteg
+  memory: 256M

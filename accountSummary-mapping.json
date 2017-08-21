@@ -1,0 +1,84 @@
+{
+  "title": "summary",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "chance":"guid"
+    },
+    "customerId": {
+      "type": "string",
+      "chance":"guid"
+    },
+    "overview": {
+      "type": "string"
+    },
+    "inboundOpportunity": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "accounts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "accountNumber": {
+            "type": "string",
+            "faker":"finance.account"
+          },
+          "registeredAs": {
+            "type": "string",
+            "enum":["individual", "joint", "IRA", "savings", "checking"]
+          },
+          "type": {
+            "type": "string",
+            "faker":"finance.accountName"
+          },
+          "accountType": {
+            "type": "string",
+            "faker":"finance.accountName"
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "city": {
+                "type": "string",
+                "faker": "address.city"
+              },
+              "state": {
+                "type": "string",
+                "faker": "address.state"
+              }
+            },
+            "required":[
+              "city",
+              "state"
+            ]
+          },
+          "netWorth": {
+            "type": "string",
+            "chance": "dollar"
+          }
+        },
+        "required": [
+          "accountNumber",
+          "registeredAs",
+          "type",
+          "accountType",
+          "address",
+          "netWorth"
+        ]
+      }
+    }
+  },
+  "required":[
+    "id",
+    "customerId",
+    "overview",
+    "inboundOpportunity",
+    "objective",
+    "accounts"
+  ]
+}
